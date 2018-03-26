@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+    <include layout="@layout/tittle"></include>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ganmao"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="@string/fuxie"
+                android:textColor="@color/black"
+                android:textSize="60dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/dabiansezhi"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="大便色质"
+                android:textColor="@color/black"
+                android:textSize="23dp" />
+
+
+            <RadioGroup
+                android:id="@+id/dabiansezhi_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/dabiansezhi_rg_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="大便清稀甚至如水样" />
+
+                <RadioButton
+                    android:id="@+id/dabiansezhi_rg_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="完谷不化" />
+
+                <RadioButton
+                    android:id="@+id/dabiansezhi_rg_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="大便色黄褐而臭如败卵" />
+
+                <RadioButton
+                    android:id="@+id/dabiansezhi_rg_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="时溏时泻" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/biancheng"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="便程"
+                android:textColor="@color/black"
+                android:textSize="23dp" />
+
+            <RadioGroup
+                android:id="@+id/biancheng_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/biancheng_rg_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="久泻、病程较长、泻下缓慢" />
+
+                <RadioButton
+                    android:id="@+id/biancheng_rg_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="暴泻、病程短、泻下急迫" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/futongqingkuang"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="腹痛情况"
+                android:textColor="@color/black"
+                android:textSize="23dp" />
+
+            <RadioGroup
+                android:id="@+id/futongqingkuang_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/futongqingkuang_rg_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="泻下腹痛，痛势急迫拒按，泻后痛减" />
+
+                <RadioButton
+                    android:id="@+id/futongqingkuang_rg_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="腹痛不甚，喜温喜按" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/yingshiqingkuang"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="饮食情况"
+                android:textColor="@color/black"
+                android:textSize="23dp" />
+
+            <RadioGroup
+                android:id="@+id/yingshiqingkuang_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/yingshiqingkuang_rg_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="食少腹胀" />
+
+                <RadioButton
+                    android:id="@+id/yingshiqingkuang_rg_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="嗳腐吞酸、不思饮食" />
+
+                <RadioButton
+                    android:id="@+id/yingshiqingkuang_rg_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="烦热口渴" />
+
+                <RadioButton
+                    android:id="@+id/yingshiqingkuang_rg_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="口不渴，或渴不欲饮" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/ebz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="恶寒发热、鼻塞头痛、肢体酸痛"
+                android:textColor="@color/black"
+                android:textSize="23dp" />
+
+            <RadioGroup
+                android:id="@+id/ebz_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ebz_rg_true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="是" />
+
+                <RadioButton
+                    android:id="@+id/ebz_rg_false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="否" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/xiaobianqingkuang"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="小便情况"
+                    android:textColor="@color/black"
+                    android:textSize="23dp" />
+
+                <RadioGroup
+                    android:id="@+id/xiaobianqingkuang_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/xiaobianqingkuang_rg_true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="小便清长" />
+
+                    <RadioButton
+                        android:id="@+id/xiaobianqingkuang_rg_false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="小便短黄" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/faliweihuang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="神疲乏力、面色萎黄"
+                    android:textColor="@color/black"
+                    android:textSize="23dp" />
+
+                <RadioGroup
+                    android:id="@+id/faliweihuang_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/faliweihuang_rg_true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="是" />
+
+                    <RadioButton
+                        android:id="@+id/faliweihuang_rg_false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="否" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/xinghanzhileng"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="形寒肢冷"
+                    android:textColor="@color/black"
+                    android:textSize="23dp" />
+
+                <RadioGroup
+                    android:id="@+id/xinghanzhileng_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/xinghanzhileng_rg_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="有" />
+
+                    <RadioButton
+                        android:id="@+id/xinghanzhileng_rg_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="无" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gangmenzhuore"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="肛门灼热"
+                    android:textColor="@color/black"
+                    android:textSize="23dp" />
+
+                <RadioGroup
+                    android:id="@+id/gangmenzhuore_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/gangmenzhuore_rg_true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="有" />
+
+                    <RadioButton
+                        android:id="@+id/gangmenzhuore_rg_false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="无" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/yaoxisuanruan"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="腰膝酸软"
+                    android:textColor="@color/black"
+                    android:textSize="23dp" />
+
+                <RadioGroup
+                    android:id="@+id/yaoxisuanruan_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/yaoxisuanruan_rg_true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="有" />
+
+                    <RadioButton
+                        android:id="@+id/yaoxisuanruan_rg_false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="无" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="提交"
+                android:layout_gravity="bottom"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

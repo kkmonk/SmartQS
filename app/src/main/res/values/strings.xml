@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SmartQS</string>
+    <string name="ganmao">感冒</string>
+    <string name="bumei">不寐</string>
+    <string name="weitong">胃痛</string>
+    <string name="fuxie"><u>腹泻</u></string>
+    <string name="futong">腹痛</string>
+</resources>
