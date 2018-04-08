@@ -19,7 +19,7 @@ public class HomeFragment extends BaseFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        view = View.inflate(activity,R.layout.frag_home,null);
+        view = inflater.inflate(R.layout.frag_home,container,false);
         return view;
     }
 }

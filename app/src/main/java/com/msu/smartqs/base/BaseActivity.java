@@ -16,9 +16,9 @@ import android.support.annotation.Nullable;
 public class BaseActivity extends Activity {
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
+    public void onCreate(Bundle savedInstanceState) {
 
-        super.onCreate(savedInstanceState, persistentState);
+        super.onCreate(savedInstanceState);
     }
     //跳转到某个Activity
     protected void intent2Activity(Class<? extends Activity> tarActivity){

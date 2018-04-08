@@ -5,4 +5,8 @@
     <string name="weitong">胃痛</string>
     <string name="fuxie"><u>腹泻</u></string>
     <string name="futong">腹痛</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
